@@ -1,6 +1,6 @@
 <?php
 
-    echo $this->Html->tag('h1', 'Cadastro',array('class' => 'text-center'));
+    echo $this->Html->tag('h1', 'Edição',array('class' => 'text-center'));
     echo $this->Form->create('Pessoa',array('class' => 'form-group'));
 ?>
 <div class ='formulario'>
@@ -9,7 +9,7 @@
     echo $this->Form->input('idade',array('class' => 'form-control'));
     echo $this->Form->input('sexo',array('class' => 'form-control'));
     echo $this->Form->input('profissao',['class' => 'form-control','label' => 'Profissão']);
-    echo $this->Js->submit('Salvar cadastro',array(
+    echo $this->Js->submit('Salvar alterações',array(
         'update' => '#content',
         'class' => 'btn btn-primary',
         'confirm' => 'Deseja salvar os dados ?',
